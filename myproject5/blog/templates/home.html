@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <h1>Template Basic</h1>
+
+    <p>This is a simple template to demonstrate basic HTML structure.</p>
+
+    <p>Welcome to the blog home page!</p>
+
+    <hr>
+
+    <h2>Student Details</h2>
+
+    <p>Name: {{ name }}</p>
+
+    <p>Age: {{ age }}</p>
+
+    <p>Skills: {{ skill }}</p>
+    <h2>Blog Information</h2>
+    <p>Title: {{blog.title}}</p>
+    <P>created_at: {{blog.created_at}}</p>
+    <P>content: {{blog.content | safe}}</p>
+    <P>name: {{blog.author.name}}</p>
+    <p>Default Empty Value:{{empty_value | default:"HITMAN"}}</p>
+    <p>Default Empty Value:{{empty_value | default_if_none:"no data"}}</p>
+</body>
+</html> 
